@@ -1,0 +1,9 @@
+{% extends 'basic.html' %}
+{% block body %}
+
+<form id="form" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{form.as_p}}
+  Update:<input type="submit">
+</form>
+{% endblock %}
